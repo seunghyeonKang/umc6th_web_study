@@ -13,62 +13,84 @@
       <hr />
       <!-- form -->
       <form id="signup-form">
+        <!-- form_이름 -->
         <div class="box_margin">
-          <p class="input_name_text">이름</p>
+          <label for="name" class="input_name_text">이름</label>
           <input
+            id="name"
             class="input_box input_text input_box_color"
             type="text"
             placeholder="이름을 입력하세요."
           />
-          <p class="input_red_text">필수 입력 항목입니다!</p>
-          <p class="input_green_text">멋진 이름이네요!</p>
+          <span id="name-error" class="input_red_text"></span>
+          <span id="name-valid" class="input_green_text">멋진 이름이네요!</span>
         </div>
+        <!-- form_이메일 -->
         <div class="box_margin">
-          <p class="input_name_text">이메일</p>
+          <label for="email" class="input_name_text">이메일</label>
           <input
+            id="email"
             class="input_box input_text input_box_color"
             type="text"
             placeholder="이메일을 입력하세요."
           />
-          <p class="input_red_text">올바른 이메일 형식이 아닙니다!</p>
-          <p class="input_green_text">올바른 이메일 형식입니다!</p>
+          <span id="email-error" class="input_red_text"></span>
+          <span id="email-valid" class="input_green_text"
+            >올바른 이메일 형식입니다!</span
+          >
         </div>
+        <!-- form_나이 -->
         <div class="box_margin">
-          <p class="input_name_text">나이</p>
+          <label for="age" class="input_name_text">나이</label>
           <input
+            id="age"
             class="input_box input_text input_box_color"
             type="text"
             placeholder="나이를 입력하세요."
           />
-          <p class="input_red_text">나이를 입력해주세요!</p>
-          <p class="input_green_text">올바른 나이 형식입니다!</p>
+          <span id="age-error" class="input_red_text"></span>
+          <span id="age-valid" class="input_green_text"
+            >올바른 나이 형식입니다!</span
+          >
         </div>
+        <!-- form_비밀번호 -->
         <div class="box_margin">
-          <p class="input_name_text">비밀번호</p>
+          <label for="password" class="input_name_text">비밀번호</label>
           <input
+            id="password"
             class="input_box input_text input_box_color"
             type="text"
-            placeholder="숫자/문자 조합, 최소 8자 이상"
+            placeholder="영어/숫자/특수문자 조합, 최소 4자 이상, 최대 12자리"
           />
-          <p class="input_red_text">비밀번호는 최소 4자리 이상이어야 합니다.</p>
-          <p class="input_green_text">올바른 비밀번호입니다!</p>
+          <span id="password-error" class="input_red_text"></span>
+          <span id="password-valid" class="input_green_text"
+            >올바른 비밀번호입니다!</span
+          >
         </div>
+        <!-- form_비밀번호 확인 -->
         <div class="box_margin">
-          <p class="input_name_text">비밀번호 재입력</p>
+          <label for="confirm-password" class="input_name_text"
+            >비밀번호 재입력</label
+          >
           <input
+            id="confirm-password"
             class="input_box input_text input_box_color"
             type="text"
             placeholder="비밀번호를 재입력하세요."
           />
-          <p class="input_red_text">비밀번호가 일치하지 않습니다.</p>
-          <p class="input_green_text">비밀번호가 일치합니다.</p>
+          <span id="confirm-password-error" class="input_red_text"></span>
+          <span id="confirm-password-valid" class="input_green_text"
+            >비밀번호가 일치합니다.</span
+          >
         </div>
+        <!-- form_제출버튼 -->
         <div class="box_margin">
-          <input
-            class="input_box input_button_text input_button_color"
-            type="button"
-            value="가입하기"
-          />
+          <button
+            type="submit"
+            class="box_margin input_box input_button_text input_button_color"
+          >
+            가입하기
+          </button>
         </div>
       </form>
     </div>
