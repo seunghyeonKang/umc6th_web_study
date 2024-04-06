@@ -2,6 +2,13 @@ body {
   margin: 0;
 }
 
+/* 모달
+.background_modal,
+.box_container_align,
+.box_modal {
+  display: none;
+} */
+
 /* background */
 .background_modal {
   position: fixed;
