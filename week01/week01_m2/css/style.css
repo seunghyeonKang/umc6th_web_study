@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-color: #ecf0f6;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  border: 1px solid #d8e0ed;
+}
+
+/* input_box */
+.input_box {
+  box-sizing: border-box;
+  width: 720px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin: 2px;
+  outline: none;
+}
+.input_text {
+  font-size: 0.95rem;
+
+  padding: 10px;
+}
+
+/* todo */
+.box_evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+.box_todos {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.box_todo {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 80px;
+}
+.button_todo {
+  width: 40px;
+  height: 20px;
+  border: none;
+  margin: 4px;
+  background-color: #d8e0ed;
+  outline: none;
+}
